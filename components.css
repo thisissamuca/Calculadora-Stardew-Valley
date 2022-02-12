@@ -1,0 +1,181 @@
+/* Gerais */
+
+/* ------------------------------------------------------------------------------- */
+
+/* CAMPOS NAVBAR */
+
+li {
+    border-radius: 10px;
+    outline: 2px solid white;
+    outline-offset: 2px;
+    margin: 5px 10px 5px 10px;
+}
+
+li:hover {
+    transition: .8s;
+    background-color: white;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Image logo Navbar */
+
+#brandimg {
+    margin-bottom: 6px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Caixa do título */
+
+#box-title {
+    display: grid;
+    grid-gap: 1.2rem;
+    align-content: center;
+    text-align: center;
+    padding: 2.5rem;
+    margin: 120px 0px 50px 0px;
+    border-radius: 30px;
+    background-color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.70)
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* CAIXA COM CONTEÚDO (CALCULADORAS) */
+
+#box-section {
+    background-color: rgba(164, 252, 255, 0.877);
+    padding: 30px;
+    border-radius: 30px;
+    margin: 0px 0px 50px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.70);
+}
+
+/* CAIXA COM CONTEÚDO (PÁGINAS INICIAL) */
+
+#box-section-home {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 0px 0px 50px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.70);
+
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* BOTÃO CALCULAR */
+
+.botao {
+    text-align: center;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+button:hover {
+    transition: .6s;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Campos de Saida */
+
+#inputGroupDay, #inputGroupProfission1, #inputGroupProfession1, #inputGroupProfission2, #inputGroupSeed, #inputGroupLevelCultivo, 
+#inputGroupFertilizante, #inputGroupRetentor, #inputGroupFoliar {
+    min-width: 50%;
+    max-width: 79%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.input-group-text {
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Modal */
+
+.modal-header {
+    display: block;
+    justify-content: center;
+}
+
+.modal-content {
+    border-radius: 30px;
+    background-color: rgba(79, 248, 155, 0.95);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.70);
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* SOCIAL MEDIA */
+
+.btn {
+    transition: .8s;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* BOTÃO MODAL */
+
+#botao2 {
+    background-color: #333;
+    border-radius: 10px;
+    outline: 1px solid white;
+    outline-offset: 3px;
+}
+
+#botao2:hover {
+    transition: .8s;
+    background-color: orangered;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* TABELA SEMENTES */
+
+thead {
+    text-align: center;
+    font-weight: bold;
+    background-color: #333;
+    
+}
+
+tr {
+    font-size: .95rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+th {
+    font-size: .8rem;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.70);
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------------------- */

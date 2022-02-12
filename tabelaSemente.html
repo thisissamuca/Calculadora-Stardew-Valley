@@ -1,0 +1,1226 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+  <head>
+
+    <title>Tabela sementes</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Samuel Augusto">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="copyright" content="© 2022 Stardew Calculator">
+    <meta name="description" content="Informações gerais sobre sementes e fertilizantes da ferramenta Stardew Calculator.">
+    <meta name="rating" content="general">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Mukta:wght@500&family=Roboto:wght@300;400;700&family=Spartan:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://data.apkshub.com/89/com.chucklefish.stardewvalley/1.3.36.104/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./texts.css">
+    <link rel="stylesheet" href="./components.css">
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body onLoad="fundo()">
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+  
+          <a class="navbar-brand" href="#">
+  
+              <img src="https://data.apkshub.com/89/com.chucklefish.stardewvalley/1.3.36.104/icon.png" alt="Logo galinha" width="38" height="38" class="d-inline-block" id="brandimg"><span id="brandtext">Stardew Calculator</span> 
+              
+          </a>
+  
+            <div>
+  
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                  
+                  <span class="navbar-toggler-icon"></span>
+  
+              </button>
+              
+              <div class="collapse navbar-collapse " id="conteudoNavbarSuportado">
+  
+                  <ul class="navbar-nav mr-auto">
+  
+                    <li class="nav-item active">
+  
+                      <a class="nav-link" href="index.html"><span class="textnav">página Inicial</span></a>
+  
+                    </li>
+  
+                    <li class="nav-item dropdown">
+                        
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+                          <span class="textnav">tabelas</span>  
+  
+                      </a>
+  
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  
+                        <a class="dropdown-item" href="tabelaSemente.html">Sementes
+                              
+                           </script>
+  
+                        </a>
+  
+                        <a class="dropdown-item disabled" href="#">Vinhos</a>
+  
+                        <a class="dropdown-item disabled" href="#">Itens de animais</a>
+  
+                      </div>
+  
+                    </li>
+  
+                    <li class="nav-item dropdown">
+                        
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+                          <span class="textnav">calculadoras</span> 
+  
+                      </a>
+  
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  
+                        <a class="dropdown-item" href="lavouras.html">Lavouras</a>
+  
+                        <a class="dropdown-item disabled" href="#">Adega</a>
+  
+                        <a class="dropdown-item disabled" href="#">Artesão</a>
+  
+                      </div>
+  
+                    </li>
+  
+                  </ul>
+  
+              </div>
+  
+          </div>
+          
+      </nav>
+  
+    </header>
+  
+  <!-- ---------------------------------------------------------------------------------------------- -->
+  
+    <main>
+    
+      <div class="container">
+      
+        <div id="box-title">
+        
+          <h1>Tabela para lavouras</h1>
+        
+          <h2 id="box-text">Dados úteis para você usar em sua fazenda!</h2>
+
+          <p class="paragraph-box">Todos os dados de Stardew Calculator foram retirados do site oficial do Stardew valley no link: <a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki">https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki</a></p>
+        
+        </div>
+
+          <table class="table table-dark">
+
+            <thead>
+
+              <tr>
+
+                <th scope="col">#</th>
+
+                <th scope="col">Nome</th>
+
+                <th scope="col">Estação</th>
+
+                <th scope="col">Dias para crescer</th>
+
+                <th scope="col">Dias para reprodução</th>
+
+                <th scope="col">Custo pierre/Sandy</th>
+
+                <th scope="col">Custo Joja</th>
+
+                <th scope="col">% frutos extra</th> 
+
+                <th scope="col">Valor normal</th> 
+
+                <th scope="col">Valor prata</th> 
+
+                <th scope="col">Valor ouro</th> 
+
+                <th scope="col">Valor irídio</th> 
+
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <!-- Abacaxi -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Abacaxi"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fb/Pineapple.png" alt="Abacaxi"></a></th>
+
+                <td>Abacaxi</td>
+
+                <td>Verão</td>
+
+                <td>14</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>300</td>
+
+                <td>375</td>
+
+                <td>450</td>
+
+                <td>600</td>
+
+              </tr>
+
+              <!-- Abóbora -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Abóbora"><img src="https://stardewvalleywiki.com/mediawiki/images/6/64/Pumpkin.png" alt="Abóbora"></a></th>
+
+                <td>Abóbora</td>
+
+                <td>Outono</td>
+
+                <td>13</td>
+
+                <td>0</td>
+
+                <td>100</td>
+
+                <td>125</td>
+
+                <td>0</td>
+
+                <td>320</td>
+
+                <td>400</td>
+
+                <td>480</td>
+
+                <td>640</td>
+
+              </tr>
+
+              <!-- Alcachofra -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Alcachofra"><img src="https://stardewvalleywiki.com/mediawiki/images/d/dd/Artichoke.png" alt="Alcachofra"></a></th>
+
+                <td>Alcachofra</td>
+
+                <td>Outono</td>
+
+                <td>8</td>
+
+                <td>0</td>
+
+                <td>30</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>160</td>
+
+                <td>200</td>
+
+                <td>240</td>
+
+                <td>320</td>
+
+              </tr>
+
+              <!-- Amaranto -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Sementes_de_amaranto"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f6/Amaranth.png" alt="Amaranto"></th>
+
+                <td>Amaranto</td>
+
+                <td>Outono</td>
+
+                <td>7</td>
+
+                <td>0</td>
+
+                <td>70</td>
+
+                <td>87</td>
+
+                <td>0</td>
+
+                <td>150</td>
+
+                <td>187</td>
+
+                <td>225</td>
+
+                <td>300</td>
+
+              </tr>
+
+              <!-- Alho -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Alho"><img src="https://stardewvalleywiki.com/mediawiki/images/c/cc/Garlic.png" alt="Alho"></a></th>
+
+                <td>Alho</td>
+
+                <td>Primavera</td>
+
+                <td>4</td>
+
+                <td>0</td>
+
+                <td>40</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>60</td>
+
+                <td>75</td>
+
+                <td>90</td>
+
+                <td>120</td>
+
+              </tr>
+
+              <!-- Batata -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Batata"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Potato.png" alt="Batata"></a></th>
+
+                <td>Batata</td>
+
+                <td>Primavera</td>
+
+                <td>6</td>
+
+                <td>0</td>
+
+                <td>50</td>
+
+                <td>62</td>
+
+                <td>~5%</td>
+
+                <td>80</td>
+
+                <td>100</td>
+
+                <td>120</td>
+
+                <td>160</td>
+
+              </tr>
+
+              <!-- Berinjela -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Berinjela"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8f/Eggplant.png" alt="Berinjela"></a></th>
+
+                <td>Berinjela</td>
+
+                <td>Outono</td>
+
+                <td>5</td>
+
+                <td>0</td>
+
+                <td>20</td>
+
+                <td>25</td>
+
+                <td>~5%</td>
+
+                <td>60</td>
+
+                <td>75</td>
+
+                <td>90</td>
+
+                <td>120</td>
+
+              </tr>
+
+              <!-- Beterraba -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Beterraba"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a4/Beet.png" alt="Beterraba"></a></th>
+
+                <td>Beterraba</td>
+
+                <td>Outono</td>
+
+                <td>6</td>
+
+                <td>0</td>
+
+                <td>20</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>100</td>
+
+                <td>125</td>
+
+                <td>150</td>
+
+                <td>200</td>
+
+              </tr>
+
+              <!-- Carambola -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Carambola"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Starfruit.png" alt="Carambola"></a></th>
+
+                <td>Carambola</td>
+
+                <td>Verão</td>
+
+                <td>13</td>
+
+                <td>0</td>
+
+                <td>400</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>750</td>
+
+                <td>937</td>
+
+                <td>1125</td>
+
+                <td>1500</td>
+
+              </tr>
+
+              <!-- Chirívia -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Chirívia"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Parsnip.png" alt="Chirívia"></a></th>
+
+                <td>Chirívia</td>
+
+                <td>Primavera</td>
+
+                <td>4</td>
+
+                <td>0</td>
+
+                <td>20</td>
+
+                <td>25</td>
+
+                <td>0</td>
+
+                <td>35</td>
+
+                <td>43</td>
+
+                <td>52</td>
+
+                <td>70</td>
+
+              </tr>
+
+              <!-- Couve -->
+
+              <tr>  
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Couve"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d1/Kale.png" alt="Couve"></a></th>
+
+                <td>Couve</td>
+
+                <td>Primavera</td>
+
+                <td>6</td>
+
+                <td>0</td>
+
+                <td>70</td>
+
+                <td>87</td>
+
+                <td>0</td>
+
+                <td>110</td>
+
+                <td>137</td>
+
+                <td>165</td>
+
+                <td>220</td>
+
+              </tr>
+
+              <!-- Couve -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Couve_chinesa"><img src="https://stardewvalleywiki.com/mediawiki/images/4/40/Bok_Choy.png" alt="Couve chinesa"></a></th>
+
+                <td>Couve chinesa</td>
+
+                <td>Outono</td>
+
+                <td>4</td>
+
+                <td>0</td>
+
+                <td>50</td>
+
+                <td>62</td>
+
+                <td>0</td>
+
+                <td>80</td>
+
+                <td>100</td>
+
+                <td>120</td>
+
+                <td>160</td>
+
+              </tr>
+
+              <!-- Couve flor -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Couve-flor"><img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Cauliflower.png" alt="Couve flor"></a></th>
+
+                <td>Couve flor</td>
+
+                <td>Primavera</td>
+
+                <td>12</td>
+
+                <td>0</td>
+
+                <td>80</td>
+
+                <td>100</td>
+
+                <td>0</td>
+
+                <td>175</td>
+
+                <td>218</td>
+
+                <td>262</td>
+
+                <td>350</td>
+
+              </tr>
+
+              <!-- Fruto do cacto -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Fruto_do_cacto"><img src="https://stardewvalleywiki.com/mediawiki/images/3/32/Cactus_Fruit.png" alt="Fruto do cacto"></a></th>
+
+                <td>Fruto do cacto</td>
+
+                <td>Primavera</td>
+
+                <td>12</td>
+
+                <td>3</td>
+
+                <td>150</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>75</td>
+
+                <td>93</td>
+
+                <td>112</td>
+
+                <td>150</td>
+
+              </tr>
+
+              <!-- Girassol -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Girassol"><img src="https://stardewvalleywiki.com/mediawiki/images/8/81/Sunflower.png" alt="Girassol"></a></th>
+
+                <td>Girassol</td>
+
+                <td>Verão/Outono</td>
+
+                <td>8</td>
+
+                <td>0</td>
+
+                <td>200</td>
+
+                <td>125</td>
+
+                <td>0</td>
+
+                <td>80</td>
+
+                <td>100</td>
+
+                <td>120</td>
+
+                <td>160</td>
+
+              </tr>
+
+              <!-- Inhame -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Inhame"><img src="https://stardewvalleywiki.com/mediawiki/images/5/52/Yam.png" alt="Inhame"></a></th>
+
+                <td>Inhame</td>
+
+                <td>Outono</td>
+
+                <td>10</td>
+
+                <td>0</td>
+
+                <td>60</td>
+
+                <td>75</td>
+
+                <td>0</td>
+
+                <td>160</td>
+
+                <td>200</td>
+
+                <td>240</td>
+
+                <td>320</td>
+
+              </tr>
+
+              <!-- Jasmim azul -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Jasmim-azul"><img src="https://stardewvalleywiki.com/mediawiki/images/2/2f/Blue_Jazz.png" alt="Jasmim Azul"></a></th>
+
+                <td>Jasmim azul</td>
+
+                <td>Primavera</td>
+
+                <td>7</td>
+
+                <td>0</td>
+
+                <td>30</td>
+
+                <td>37</td>
+
+                <td>0</td>
+
+                <td>50</td>
+
+                <td>62</td>
+
+                <td>75</td>
+
+                <td>100</td>
+
+              </tr>
+
+              <!-- Lúpulo -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Lúpulo"></a><img src="https://stardewvalleywiki.com/mediawiki/images/5/59/Hops.png" alt="Lúpulo"></th>
+
+                <td>Lúpulo</td>
+
+                <td>Verão</td>
+
+                <td>11</td>
+
+                <td>1</td>
+
+                <td>60</td>
+
+                <td>75</td>
+
+                <td>0</td>
+
+                <td>25</td>
+
+                <td>31</td>
+
+                <td>37</td>
+
+                <td>50</td>
+
+              </tr>
+
+              <!-- Melão -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Melão"><img src="https://stardewvalleywiki.com/mediawiki/images/1/19/Melon.png" alt="Melão"></a></th>
+
+                <td>Melão</td>
+
+                <td>Verão</td>
+
+                <td>12</td>
+
+                <td>0</td>
+
+                <td>80</td>
+
+                <td>100</td>
+
+                <td>0</td>
+
+                <td>250</td>
+
+                <td>312</td>
+
+                <td>375</td>
+
+                <td>500</td>
+
+              </tr>
+
+              <!-- Miçanga -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Flor-Miçanga"></a><img src="https://stardewvalleywiki.com/mediawiki/images/9/9f/Summer_Spangle.png" alt="Flor de miçang"></th>
+
+                <td>Miçanga</td>
+
+                <td>Verão</td>
+
+                <td>8</td>
+
+                <td>0</td>
+
+                <td>50</td>
+
+                <td>62</td>
+
+                <td>0</td>
+
+                <td>90</td>
+
+                <td>112</td>
+
+                <td>135</td>
+
+                <td>180</td>
+
+              </tr>
+
+              <!-- Milho -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Milho"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f8/Corn.png" alt="Milho"></a></th>
+
+                <td>Milho</td>
+
+                <td>Verão/Outono</td>
+
+                <td>14</td>
+
+                <td>3</td>
+
+                <td>150</td>
+
+                <td>187</td>
+
+                <td>0</td>
+
+                <td>50</td>
+
+                <td>62</td>
+
+                <td>75</td>
+
+                <td>100</td>
+
+              </tr>
+
+              <!-- Mirtilo -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Mirtilo"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9e/Blueberry.png" alt="Mirtilo"></a></th>
+
+                <td>Mirtilo</td>
+
+                <td>Verão</td>
+
+                <td>13</td>
+
+                <td>4</td>
+
+                <td>80</td>
+
+                <td>0</td>
+
+                <td>~5</td>
+
+                <td>50</td>
+
+                <td>62</td>
+
+                <td>75</td>
+
+                <td>100</td>
+
+              </tr>
+
+              <!-- Morango -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Morango"><img src="https://stardewvalleywiki.com/mediawiki/images/6/6d/Strawberry.png" alt="Morango"></a></th>
+
+                <td>Morango</td>
+
+                <td>Primavera</td>
+
+                <td>8</td>
+
+                <td>4</td>
+
+                <td>100</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>120</td>
+
+                <td>150</td>
+
+                <td>180</td>
+
+                <td>240</td>
+
+              </tr>
+
+              <!-- Oxicoco -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Oxicoco"><img src="https://stardewvalleywiki.com/mediawiki/images/6/6e/Cranberries.png" alt="Oxicoco"></a></th>
+
+                <td>Oxicoco</td>
+
+                <td>Outono</td>
+
+                <td>7</td>
+
+                <td>5</td>
+
+                <td>240</td>
+
+                <td>300</td>
+
+                <td>~5</td>
+
+                <td>75</td>
+
+                <td>93</td>
+
+                <td>112</td>
+
+                <td>150</td>
+
+              </tr>
+
+              <!-- Papoula -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Papoula"><img src="https://stardewvalleywiki.com/mediawiki/images/3/37/Poppy.png" alt="Papoula"></a></th>
+
+                <td>Papoula</td>
+
+                <td>Verão</td>
+
+                <td>7</td>
+
+                <td>0</td>
+
+                <td>100</td>
+
+                <td>125</td>
+
+                <td>0</td>
+
+                <td>140</td>
+
+                <td>175</td>
+
+                <td>210</td>
+
+                <td>280</td>
+
+              </tr>
+
+              <!-- Pimenta -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Pimenta_quente"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f1/Hot_Pepper.png" alt="Pimenta"></a></th>
+
+                <td>Pimenta</td>
+
+                <td>Verão</td>
+
+                <td>5</td>
+
+                <td>3</td>
+
+                <td>40</td>
+
+                <td>50</td>
+
+                <td>0</td>
+
+                <td>40</td>
+
+                <td>50</td>
+
+                <td>60</td>
+
+                <td>80</td>
+
+              </tr>
+
+              <!-- Rabanete -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Rabanete"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d5/Radish.png" alt="Rabanete"></a></th>
+
+                <td>Rabanete</td>
+
+                <td>Verão</td>
+
+                <td>6</td>
+
+                <td>0</td>
+
+                <td>40</td>
+
+                <td>50</td>
+
+                <td>0</td>
+
+                <td>90</td>
+
+                <td>112</td>
+
+                <td>135</td>
+
+                <td>180</td>
+
+              </tr>
+
+              <!-- Rosa fada -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Rosa-de-fada"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5c/Fairy_Rose.png" alt="Rosa Fada"></a></th>
+
+                <td>Rosa da fada</td>
+
+                <td>Outono</td>
+
+                <td>12</td>
+
+                <td>0</td>
+
+                <td>200</td>
+
+                <td>250</td>
+
+                <td>0</td>
+
+                <td>290</td>
+
+                <td>362</td>
+
+                <td>435</td>
+
+                <td>580</td>
+
+              </tr>
+
+              <!-- Ruibardo -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Ruibarbo"><img src="https://stardewvalleywiki.com/mediawiki/images/6/6e/Rhubarb.png" alt="Ruibardo"></a></th>
+
+                <td>Ruibardo</td>
+
+                <td>Primavera</td>
+
+                <td>13</td>
+
+                <td>0</td>
+
+                <td>100</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>220</td>
+
+                <td>275</td>
+
+                <td>330</td>
+
+                <td>440</td>
+
+              </tr>
+
+              <!-- Tomate -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Tomate"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Tomato.png" alt="Tomate"></a></th>
+
+                <td>Tomate</td>
+
+                <td>Verão</td>
+
+                <td>11</td>
+
+                <td>4</td>
+
+                <td>50</td>
+
+                <td>62</td>
+
+                <td>~5%</td>
+
+                <td>60</td>
+
+                <td>75</td>
+
+                <td>90</td>
+
+                <td>120</td>
+
+              </tr>
+
+              <!-- Trigo -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Trigo"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e2/Wheat.png" alt="Trigo"></a></th>
+
+                <td>Trigo</td>
+
+                <td>Verão/Outono</td>
+
+                <td>4</td>
+
+                <td>0</td>
+
+                <td>10</td>
+
+                <td>12</td>
+
+                <td>0</td>
+
+                <td>25</td>
+
+                <td>31</td>
+
+                <td>37</td>
+
+                <td>50</td>
+
+              </tr>
+
+              <!-- Uva -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Uva"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Grape.png" alt=" Uva"></a></th>
+
+                <td>Uva</td>
+
+                <td>Outono</td>
+
+                <td>10</td>
+
+                <td>3</td>
+
+                <td>60</td>
+
+                <td>75</td>
+
+                <td>0</td>
+
+                <td>80</td>
+
+                <td>100</td>
+
+                <td>120</td>
+
+                <td>160</td>
+
+              </tr>
+
+              <!-- Vagem -->
+
+              <tr>
+
+                <th scope="row"><a href="https://pt.stardewvalleywiki.com/Vagem"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5c/Green_Bean.png" alt="Vagem"></a></th>
+
+                <td>Vagem</td>
+
+                <td>Primavera</td>
+
+                <td>10</td>
+
+                <td>3</td>
+
+                <td>60</td>
+
+                <td>75</td>
+
+                <td>0</td>
+
+                <td>40</td>
+
+                <td>50</td>
+
+                <td>60</td>
+
+                <td>80</td>
+
+              </tr> 
+
+            </tbody>
+
+          </table>
+
+      </div>
+
+    </main>
+  
+  <!-- ---------------------------------------------------------------------------------------------- -->
+  
+    <!-- Rodapé -->
+    
+    <footer class="bg-dark text-center text-white">
+
+      <!-- Grid container -->
+    
+      <div class="container p-4 pb-0">
+      
+        <!-- Section: Social media -->
+      
+        <section>
+        
+          <!-- Linkedin -->
+        
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samuel-augusto-0462b1231/" role="button"
+        
+            ><i class="fab fa-linkedin-in"></i
+
+          ></a>
+            
+          <!-- Github -->
+            
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/thisissamuca?tab=repositories" role="button"
+            
+            ><i class="fab fa-github"></i
+            
+          ></a>
+            
+        </section>
+      
+        <!-- Section: Social media -->
+      
+      </div>
+    
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+    
+      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+      
+        <h4>© 2022 Stardew Calculator</h4>
+      
+      </div>
+    
+      <!-- Copyright -->
+      
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/860a76a2c2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+  </body>
+
+</html>
+
+

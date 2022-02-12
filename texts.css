@@ -1,0 +1,103 @@
+/* Gerais */
+
+/* ------------------------------------------------------------------------------- */
+
+/* TEXTO LINKS NAVBAR*/
+
+ul a {
+    font-size: 1rem;
+}
+
+/* TEXTOS NAVBAR */
+
+.textnav {
+    color: white;
+}
+
+.textnav:hover {
+    color: black;
+}
+
+/* TEXTO LOGO */
+
+#brandtext {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    color: rgb(216, 216, 216);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* TÍTULO CALCULADORA */
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* TEXTO CALCULADORA */
+
+#box-text {
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* TEXTO AUXILIAR */
+
+.paragraph-box {
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+    font-style: normal;
+}
+
+.paragraph {
+    color: white;
+    font-size: .8rem;
+    text-align: start;
+    font-style: normal;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* TITULO DAS CAIXAS */
+
+h2 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* TEXTO DOS CAMPOS DE ENTRADA E SAIDA */
+
+.input-group-text {
+    font-size: auto;
+}
+
+p {
+    margin: 0px 0px 0px 10px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* TEXTO FOOTER */
+
+h4 {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}

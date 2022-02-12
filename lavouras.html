@@ -1,0 +1,1028 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+  <head>
+
+    <title>Lavouras</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Samuel Augusto">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="copyright" content="© 2022 Stardew Calculator">
+    <meta name="description" content="Ferramenta para calcular os lucros em sua fazenda Stardew Valley.">
+    <meta name="rating" content="general">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Mukta:wght@500&family=Roboto:wght@300;400;700&family=Spartan:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://data.apkshub.com/89/com.chucklefish.stardewvalley/1.3.36.104/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./texts.css">
+    <link rel="stylesheet" href="./components.css">
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body onLoad="fundo()">
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+
+            <a class="navbar-brand" href="#">
+
+                <img src="https://data.apkshub.com/89/com.chucklefish.stardewvalley/1.3.36.104/icon.png" alt="Logo galinha" width="38" height="38" class="d-inline-block" id="brandimg"><span id="brandtext">Stardew Calculator</span> 
+                
+            </a>
+
+              <div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    
+                    <span class="navbar-toggler-icon"></span>
+    
+                </button>
+                
+                <div class="collapse navbar-collapse " id="conteudoNavbarSuportado">
+    
+                    <ul class="navbar-nav mr-auto">
+    
+                      <li class="nav-item active">
+    
+                        <a class="nav-link" href="index.html"><span class="textnav">página Inicial</span></a>
+    
+                      </li>
+    
+                      <li class="nav-item dropdown">
+                          
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    
+                            <span class="textnav">tabelas</span>  
+    
+                        </a>
+    
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                          <a class="dropdown-item" href="tabelaSemente.html">Sementes
+                                
+                             </script>
+
+                          </a>
+    
+                          <a class="dropdown-item disabled" href="#">Vinhos</a>
+
+                          <a class="dropdown-item disabled" href="#">Itens de animais</a>
+    
+                        </div>
+    
+                      </li>
+    
+                      <li class="nav-item dropdown">
+                          
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    
+                            <span class="textnav">calculadoras</span> 
+    
+                        </a>
+    
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                          <a class="dropdown-item" href="lavouras.html">Lavouras</a>
+    
+                          <a class="dropdown-item disabled" href="#">Adega</a>
+
+                          <a class="dropdown-item disabled" href="#">Artesão</a>
+    
+                        </div>
+    
+                      </li>
+    
+                    </ul>
+    
+                </div>
+    
+            </div>
+            
+        </nav>
+
+    </header>
+
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+    <main>
+
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+        <!-- TÍTULO DA PÁGINA -->
+
+        <div class="container" >
+
+            <div id="box-title">
+
+                <h1>Lavouras</h1>
+
+                <h2 id="box-text" >A melhor forma de calcular lucros em suas lavouras !</h2>
+
+                <p class="paragraph-box">Todos os dados de Stardew Calculator foram retirados do site oficial do Stardew valley no link: <a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki">https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki</a></p>
+
+            </div>
+
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+            <!-- SESSÃO DAS VARIÁVEIS  -->
+
+            <div id="box-section">
+
+                <h3>1º passo: preencha os campos</h3>  
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <div class="entrada">
+
+                            <div class="input-group">
+    
+                                <span class="input-group-text" id="inputGroup" data-bs-toggle="tooltip" data-bs-placement="top" title="Digite o número utilizado de espaços reservados para sua lavoura. Cada número representa um bloco de espaço.">Espaço usado em lavouras:</span>
+    
+                                <input type="number" class="form-control" name="espaco" id="espaco" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="ex: 100">
+                            
+                            </div>
+                            
+                        </div>
+
+                        <div class="entrada">
+
+                            <div class="input-group" id="inputGroupSelect00">
+
+                                <label class="input-group-text" for="inputGroupProfession1" data-bs-toggle="tooltip" data-bs-placement="top" title="Escolha a primeira profissão de seu fazendeiro.">Profissão 1 do jogador:</label>
+
+                                <select class="form-select" id="inputGroupProfission1">
+
+                                  <option value="nda" selected>Escolha</option>
+
+                                  <option value="p1j0" id="p1j0">Nenhuma</option>
+
+                                  <option value="p1j1" id="p1j1">Cultivador</option>
+
+                                </select>
+
+                              </div>
+
+                        </div>
+
+                        <div class="entrada">
+
+                            <div class="input-group" id="inputGroupSelect00">
+
+                                <label class="input-group-text" for="inputGroupSelect01" data-bs-toggle="tooltip" data-bs-placement="top" title="Escolha o Solo foliar que irá usar em sua lavoura. Cada Solo foliar aumenta a velocidade de produção da semente.">Solo Foliar Usado:</label>
+
+                                <select class="form-select" id="inputGroupFoliar">
+
+                                  <option value="nda" selected>Escolha</option>
+                                  
+                                  <option value="sf0" id="sf0">Sem Solo foliar</option>
+
+                                  <option value="sf1" id="sf1">Solo foliar</option>
+
+                                  <option value="sf2" id="sf2">Solo foliar premium</option>
+
+                                  <option value="sf3" id="sf3">Hiper Solo foliar</option>
+
+                                </select>
+
+                              </div>
+
+                        </div>
+
+                        <div class="entrada">
+
+                            <div class="input-group" id="inputGroupSelect00">
+
+                                <label class="input-group-text" for="inputGroupSelect01" data-bs-toggle="tooltip" data-bs-placement="top" title="Escolha o Solo retentor que irá usar em sua lavoura. Cada Solo retentor possui uma chance de manter a terra molhada no dia seguinte.">Solo Retentor Usado:</label>
+
+                                <select class="form-select" id="inputGroupRetentor">
+
+                                  <option value="nda" selected>Escolha</option>
+
+                                  <option value="sr0" id="sr0">Sem Solo Retentor</option>
+                                  
+                                  <option value="sr1" id="sr1">Solo retentor</option>
+
+                                  <option value="sr2" id="sr2">Solo retentor de qualidade</option>
+
+                                  <option value="sr3" id="sr2">Solo retentor premium</option>
+
+                                </select>
+
+                              </div>
+
+                        </div>
+
+                        <div class="entrada">
+
+                            <div class="input-group" id="inputGroupSelect00">
+
+                                <label class="input-group-text" for="inputGroupSelect01" data-bs-toggle="tooltip" data-bs-placement="top" title="Escolha o fertilizante utilizado em sua lavoura. Lembre-se, o fertilizante aumenta a qualidade de sua colheita.">Fertilizante Usado:</label>
+
+                                <select class="form-select" id="inputGroupFertilizante">
+
+                                  <option value="nda" selected>Escolha</option>
+                                  
+                                  <option value="0" id="f0">Sem fertilizante</option>
+
+                                  <option value="1" id="f1">Fertilizante básico</option>
+
+                                  <option value="2" id="f2">Fertilizante de qualidade</option>
+
+                                  <option value="3" id="f3">Fertilizante premium</option>
+
+                                </select>
+
+                              </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="entrada">
+
+                            <div class="input-group" id="inputGroupSelect00">
+
+                                <label class="input-group-text" for="inputGroupSelect01" data-bs-toggle="tooltip" data-bs-placement="top" title="Escolha o dia atual em sua fazenda.">Dia atual:</label>
+
+                                <select class="form-select" id="inputGroupDay">
+
+                                    <option value="nda" selected>Escolha</option>
+
+                                    <option value="d1" id="d1">1</option>
+
+                                    <option value="d2" id="d2">2</option>
+
+                                    <option value="d3" id="d3">3</option>
+
+                                    <option value="d4" id="d4">4</option>
+
+                                    <option value="d5" id="d5">5</option>
+
+                                    <option value="d6" id="d6">6</option>
+
+                                    <option value="d7" id="d7">7</option>
+
+                                    <option value="d8" id="d8">8</option>
+
+                                    <option value="d9" id="d9">9</option>
+
+                                    <option value="d10" id="d10">10</option>
+
+                                    <option value="d11" id="d11">11</option>
+
+                                    <option value="d12" id="d12">12</option>
+                                    
+                                    <option value="d13" id="d13">13</option>
+
+                                    <option value="d14" id="d14">14</option>
+
+                                    <option value="d15" id="d15">15</option>
+
+                                    <option value="d16" id="d16">16</option>
+
+                                    <option value="d17" id="d17">17</option>
+
+                                    <option value="d18" id="d18">18</option>
+
+                                    <option value="d19" id="d19">19</option>
+
+                                    <option value="d20" id="d20">20</option>
+
+                                    <option value="d21" id="d21">21</option>
+
+                                    <option value="d22" id="d22">22</option>
+
+                                    <option value="d23" id="d23">23</option>
+
+                                    <option value="d24" id="d24">24</option>
+
+                                    <option value="d25" id="d25">25</option>
+                                    
+                                    <option value="d26" id="d26">26</option>
+
+                                    <option value="d27" id="d27">27</option>
+                                    
+                                    <option value="d28" id="d28">28</option>
+
+                                </select>
+
+                              </div>
+
+                        </div>
+
+                        <div class="entrada">
+
+                            <div class="input-group" id="inputGroupSelect00">
+
+                                <label class="input-group-text" for="inputGroupSelect01" data-bs-toggle="tooltip" data-bs-placement="top" title="Escolha a semente que irá usar em sua lavoura.">Semente que irá usar:</label>
+
+                                <select class="form-select" id="inputGroupSeed">
+
+                                  <option value="nda" selected>Escolha</option>
+                                  
+                                  <option value="abacaxi">Abacaxi</option>
+
+                                  <option value="abobora">Abóbora</option>
+
+                                  <option value="alcachofra">Alcachofra</option>
+
+                                  <option value="amaranto">Amaranto</option>
+
+                                  <option value="alho">Alho</option>
+
+                                  <option value="batata">Batata</option>
+
+                                  <option value="berinjela">Berinjela</option>
+
+                                  <option value="beterraba">Beterraba</option>
+
+                                  <option value="carambola">Carambola</option>
+
+                                  <option value="chirivia">Chirívia</option>
+
+                                  <option value="couve">Couve</option>
+
+                                  <option value="couveChinesa">Couve chinesa</option>
+
+                                  <option value="couveFlor">Couve Flor</option>
+
+                                  <option value="frutoCacto">Fruto do cacto</option>
+
+                                  <option value="girassol">Girassol</option>
+
+                                  <option value="inhame">Inhame</option>
+
+                                  <option value="jasmimAzul">Jasmim Azul</option>
+
+                                  <option value="lupulo">Lúpulo</option>
+
+                                  <option value="melao">Melão</option>
+
+                                  <option value="micanga">Miçanga</option>
+
+                                  <option value="milho">Milho</option>
+
+                                  <option value="mirtilo">Mirtilo</option>
+
+                                  <option value="morango">Morango</option>
+
+                                  <option value="oxicoco">Oxicoco</option>
+                                  
+                                  <option value="papoula">Papoula</option>
+
+                                  <option value="pimenta">Pimenta</option>
+
+                                  <option value="rabanete">Rabanete</option>
+
+                                  <option value="rosaFada">Rosa de fada</option>
+
+                                  <option value="ruibardo">Ruibardo</option>
+
+                                  <option value="tomate">Tomate</option>
+
+                                  <option value="trigo">Trigo</option>
+
+                                  <option value="uva">Uva</option>
+
+                                  <option value="vagem">Vagem</option>
+
+                                </select>
+
+                              </div>
+
+                        </div>
+
+                        <div class="entrada">
+
+                            <div class="input-group" id="inputGroupSelect00">
+
+                                <label class="input-group-text" for="inputGroupSelect01" data-bs-toggle="tooltip" data-bs-placement="top" title="Escolha a segunda profissão de seu fazendeiro.">Profissão 2 do jogador:</label>
+
+                                <select class="form-select" id="inputGroupProfission2">
+
+                                  <option value="nda" selected>Escolha</option>
+
+                                  <option value="p2j0" id="p2j0">Nenhuma</option>
+
+                                  <option value="p2j1" id="p2j1">Agricultor</option>
+
+                                </select>
+
+                              </div>
+
+                        </div>
+
+                        <div class="entrada">
+
+                            <div class="input-group" id="inputGroupSelect00">
+
+                                <label class="input-group-text" for="inputGroupSelect01" data-bs-toggle="tooltip" data-bs-placement="top" title="Escolha o nível de cultivo do seu fazendeiro. Lembre-se, cada nível influencia na qualidade de sua colheita.">Nivel de cultivo:</label>
+
+                                <select class="form-select" id="inputGroupLevelCultivo">
+
+                                    <option value="nda" selected>Escolha</option>
+
+                                    <option value="0" id="0">0</option>
+
+                                    <option value="1" id="1">1</option>
+
+                                    <option value="2" id="2">2</option>
+
+                                    <option value="3" id="3">3</option>
+
+                                    <option value="4" id="4">4</option>
+
+                                    <option value="5" id="5">5</option>
+
+                                    <option value="6" id="6">6</option>
+
+                                    <option value="7" id="7">7</option>
+
+                                    <option value="8" id="8">8</option>
+
+                                    <option value="9" id="9">9</option>
+
+                                    <option value="10" id="10">10</option>
+
+                                    <option value="11" id="11">11</option>
+
+                                    <option value="12" id="12">12</option>
+                                    
+                                    <option value="13" id="13">13</option>
+
+                                </select>
+
+                              </div>
+
+                        </div>
+
+                        <div class="entrada">
+
+                            <div class="input-group">
+    
+                                <span class="input-group-text" id="inputGroup">STARDEW CALCULATOR:</span>
+                            
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="botao">
+
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#ModalLongoExemplo" value="Somar" id="botao" Onclick="somar()"><span id="calcular">Calcular</span> </button>
+    
+                </div>
+
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+                <!-- Modal -->
+              
+                <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true" data-keyboard="true">
+              
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+              
+                        <div class="modal-content">
+              
+                            <div class="modal-header">
+                            
+                              <h3 class="modal-title" id="TituloModalLongoExemplo">2º passo: acompanhe o calculo</h3>
+
+                              <p>pressione a tecla "esc" para sair.</p>
+                            
+                            </div>
+
+                            <!-- Modal BODY -->
+              
+                            <div class="modal-body">
+
+                                <div class="row">
+                                
+                                    <div class="col">
+
+                                        <!-- SAIDA 1 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input1" data-bs-toggle="tooltip" data-bs-placement="top" title="É a quantidade de espaços reservados para sua lavoura. Cada número representa um bloco de espaço.">
+                                            
+                                                <span class="input-group-text">Espaço para lavoura:</span>
+                                            
+                                                <p id="inputGroup1"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 2 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input2" data-bs-toggle="tooltip" data-bs-placement="top" title="É o dia atual de sua fazenda.">
+                                            
+                                                <span class="input-group-text">Dia atual:</span>
+                                            
+                                                <p id="inputGroup2"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 3 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input3" data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o custo unitário da semente na loja Pierre ou na Sandy.">
+                                            
+                                                <span class="input-group-text">Custo de cada semente no Pìerre:</span>
+                                            
+                                                <p id="inputGroup3"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 4 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input4" data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o custo total das sementes no mercado Joja.">
+                                            
+                                                <span class="input-group-text">Custo total de sementes na Joja:</span>
+                                            
+                                                <p id="inputGroup4"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 5 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input5" data-bs-toggle="tooltip" data-bs-placement="top" title="É o fertilizante usado na lavoura. Cada fertilizante possui uma chance de aumentar a qualidade dos frutos.">
+                                            
+                                                <span class="input-group-text">Fertilizante usado:</span>
+                                            
+                                                <p id="inputGroup5"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 6 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input6" data-bs-toggle="tooltip" data-bs-placement="top" title="Cada solo foliar aumenta a velocidade de crescimento da plantação em uma porcentagem.">
+                                            
+                                                <span class="input-group-text">Solo foliar usado:</span>
+                                            
+                                                <p id="inputGroup6"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 7 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input7" data-bs-toggle="tooltip" data-bs-placement="top" title="Seu fazendeiro possui essa profissão. Cada profissão tem um bônus específico que ajuda o fazendeiro.">
+                                            
+                                                <span class="input-group-text">Profissão 1 do fazendeiro:</span>
+                                            
+                                                <p id="inputGroup7"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 8 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input8" data-bs-toggle="tooltip" data-bs-placement="top" title="É a quantidade de dias que a semente demora para crescer. O cálculo já inclui os buffs da profissão e do solo foliar.">
+                                            
+                                                <span class="input-group-text">Tempo para crescer:</span>
+                                            
+                                                <p id="inputGroup8"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 9 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input9" data-bs-toggle="tooltip" data-bs-placement="top" title="Algumas sementes possuem uma chance aleatória de produzirem mais frutos na hora da colheita.">
+                                            
+                                                <span class="input-group-text">Chance de mais frutos:</span>
+                                            
+                                                <p id="inputGroup9"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 10 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input10" data-bs-toggle="tooltip" data-bs-placement="top" title="É o valor de venda normal, ou seja, sem estrela alguma.">
+                                            
+                                                <span class="input-group-text">Valor de venda normal:</span>
+                                            
+                                                <p id="inputGroup10"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 11 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input11" data-bs-toggle="tooltip" data-bs-placement="top" title="É o valor de venda com estrela de prata.">
+                                            
+                                                <span class="input-group-text">Valor de venda prata:</span>
+                                            
+                                                <p id="inputGroup11"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 12 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input12"  data-bs-toggle="tooltip" data-bs-placement="top" title="É o valor de venda com estrela de ouro.">
+                                            
+                                                <span class="input-group-text">Valor de venda ouro:</span>
+                                            
+                                                <p id="inputGroup12"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 13 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input13"  data-bs-toggle="tooltip" data-bs-placement="top" title="É o valor de venda com estrela de irídio.">
+                                            
+                                                <span class="input-group-text">Valor de venda irídio:</span>
+                                            
+                                                <p id="inputGroup13"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 14 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input14"  data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o faturamento bruto total das vendas (inclui os valores de gastos).">
+                                            
+                                                <span class="input-group-text">Faturamento total:</span>
+                                            
+                                                <p id="inputGroup14"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 15 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input15"  data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o lucro total por comprar as sementes inteiramente no Pierre. O cálculo desconsidera os valores com gastos, restando somente a parte liquida.">
+                                            
+                                                <span class="input-group-text">Lucro por comprar no Pierre:</span>
+                                            
+                                                <p id="inputGroup15"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+                                    
+                                    </div>
+                                
+                                    <div class="col">
+
+                                        <!-- SAIDA 16 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input17"  data-bs-toggle="tooltip" data-bs-placement="top" title="Essa é a semente usada na lavoura.">
+                                            
+                                                <span class="input-group-text">Semente usada:</span>
+                                            
+                                                <p id="inputGroup17"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 17 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input18"  data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o nível de cultivo do jogador. Cada nível influencia diretamente no cálculo. Quanto maior o nível de cultivo, maior a chance do aumento da qualidade dos frutos.">
+                                            
+                                                <span class="input-group-text">Nível de cultivo do fazendeiro:</span>
+                                            
+                                                <p id="inputGroup18"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 18 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input19" data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o custo unitário da semente no mercado Joja.">
+                                            
+                                                <span class="input-group-text">Custo de cada semente na Joja:</span>
+                                            
+                                                <p id="inputGroup19"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 19 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input20" data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o custo total das sementes na loja Pierre ou na Sandy.">
+                                            
+                                                <span class="input-group-text">Custo total de sementes no Pierre:</span>
+                                            
+                                                <p id="inputGroup20"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 20 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input21" data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o solo retentor utilizado. Cada solo retentor possui uma chance de permanecer molhado o chão regado no dia seguinte.">
+                                            
+                                                <span class="input-group-text">Solo retentor usado:</span>
+                                            
+                                                <p id="inputGroup21"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 21 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input22" data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o tempo de reprodução da semente. O solo foliar não influencia no tempo de reprodução.">
+                                            
+                                                <span class="input-group-text">Tempo de reprodução da semente:</span>
+                                            
+                                                <p id="inputGroup22"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 22 -->
+                                    
+                                        <div class="saida">
+                                        
+                                            <span class="input-group-text" id="input23" data-bs-toggle="tooltip" data-bs-placement="top" title="Seu fazendeiro possui essa profissão. Cada profissão tem um bônus específico que ajuda o fazendeiro.">
+                                            
+                                                <span class="input-group-text">Profissão 2 do fazendeiro:</span>
+                                            
+                                                <p id="inputGroup23"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 23 -->
+
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input24" data-bs-toggle="tooltip" data-bs-placement="top" title="É a quantidade de colheitas possíveis dentro de uma estação.">
+                                            
+                                                <span class="input-group-text">Número de colheitas:</span>
+                                            
+                                                <p id="inputGroup24"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 24 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input25" data-bs-toggle="tooltip" data-bs-placement="top" title="É a chance de coletar um fruto com a qualidade normal.">
+                                            
+                                                <span class="input-group-text">Chance de coletar fruto normal:</span>
+                                            
+                                                <p id="inputGroup25"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 25 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input26" data-bs-toggle="tooltip" data-bs-placement="top" title="É a chance de coletar um fruto com a qualidade prata.">
+                                            
+                                                <span class="input-group-text">Chance de coletar fruto prata:</span>
+                                            
+                                                <p id="inputGroup26"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 26 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input27" data-bs-toggle="tooltip" data-bs-placement="top" title="É a chance de coletar um fruto com a qualidade ouro.">
+                                            
+                                                <span class="input-group-text">Chance de coletar fruto ouro:</span>
+                                            
+                                                <p id="inputGroup27"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 27 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input28" data-bs-toggle="tooltip" data-bs-placement="top" title="É a chance de coletar um fruto com a qualidade irídio.">
+                                            
+                                                <span class="input-group-text">Chance de coletar fruto irídio:</span>
+                                            
+                                                <p id="inputGroup28"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 28 -->
+                                    
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input30" id="input15"  data-bs-toggle="tooltip" data-bs-placement="top" title="Esse é o lucro total por comprar as sementes inteiramente no mercado Joja. O cálculo desconsidera os valores com gastos, restando somente a parte liquida.">
+                                            
+                                                <span class="input-group-text">Lucro por comprar na Joja:</span>
+                                            
+                                                <p id="inputGroup29"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 29 -->
+
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input31" data-bs-toggle="tooltip" data-bs-placement="top" title="É o número mínimo de dias para você começar a ter lucro caso tenha comprado as sementes inteiramente no Pierre ou Sandy.">
+                                            
+                                                <span class="input-group-text">Quantidade de dias para ter lucro no Pierre:</span>
+                                            
+                                                <p id="inputGroup30"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+
+                                        <!-- SAIDA 30 -->
+
+                                        <div class="saida">
+
+                                            <span class="input-group-text" id="input16" data-bs-toggle="tooltip" data-bs-placement="top" title="É o número mínimo de dias para você começar a ter lucro caso tenha comprado as sementes inteiramente no mercado Joja.">
+                                            
+                                                <span class="input-group-text">Quantidade de dias para ter lucro na Joja:</span>
+                                            
+                                                <p id="inputGroup16"></p>
+                                            
+                                            </span>
+                                        
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- MODAL FOOTER -->
+
+                            <div class="modal-footer">
+              
+                                <button type="button" class="btn btn-primary" id="botao2">retornar à calculadora</button>
+                                
+                            </div>
+              
+                        </div>
+              
+                    </div>
+              
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+    <!-- Rodapé -->
+
+    <footer class="bg-dark text-center text-white">
+        
+        <!-- Grid container -->
+
+        <div class="container p-4 pb-0">
+
+          <!-- Section: Social media -->
+
+          <section>
+      
+            <!-- Linkedin -->
+
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samuel-augusto-0462b1231/" role="button"
+
+              ><i class="fab fa-linkedin-in"></i
+                
+            ></a>
+      
+            <!-- Github -->
+
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/thisissamuca?tab=repositories" role="button"
+
+              ><i class="fab fa-github"></i
+
+            ></a>
+
+          </section>
+
+          <!-- Section: Social media -->
+
+        </div>
+
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+
+        <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+
+          <h4>© 2022 Stardew Calculator</h4>
+
+        </div>
+
+        <!-- Copyright -->
+
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/860a76a2c2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+  </body>
+  
+</html>
