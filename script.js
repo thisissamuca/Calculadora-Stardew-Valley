@@ -1,74 +1,3 @@
-  /* ____________________________________________________________________________________________________ */
-
-/* Fundo dinâmico */
-
-function fundo() {
-
-  var data = new Date() 
-
-  var hora = data.getMinutes()
-
-  if (hora >= 00 && hora < 5) {
-    // MADRUGADA
-    document.body.style.backgroundColor = '#370d4b'
-
-  } else if (hora >= 5 && hora < 10) {
-    // AMANHECER
-    document.body.style.backgroundColor = '#d75f2c'
-
-  } else if (hora >= 10 && hora < 15) {
-    // NOITE
-    document.body.style.backgroundColor = '#fff14e'
-
-  } else if (hora >= 15 && hora < 20) {
-    // MADRUGADA
-    document.body.style.backgroundColor = '#ff4d0d'
-
-  } else if (hora >= 20 && hora < 25) {
-    // AMANHECER
-    document.body.style.backgroundColor = '#0d67ff'
-
-  } else if (hora >= 25 && hora < 30) {
-    // NOITE
-    document.body.style.backgroundColor = '#1bc958'
-
-  } else if (hora >= 30 && hora < 35) {
-    // MADRUGADA
-    document.body.style.backgroundColor = '#29eb28'
-
-  } else if (hora >= 35 && hora < 40) {
-    // AMANHECER
-    document.body.style.backgroundColor = '#d553c1'
-
-  } else if (hora >= 40 && hora < 45) {
-    // NOITE
-    document.body.style.backgroundColor = '#c23333'
-
-  } else if (hora >= 45 && hora < 50) {
-    // MADRUGADA
-    document.body.style.backgroundColor = '#250000'
-
-  } else if (hora >= 50 && hora < 55) {
-    // AMANHECER
-    document.body.style.backgroundColor = '#c5c5d4'
-
-  } else if (hora >= 55 && hora <= 59) {
-    // NOITE
-    document.body.style.backgroundColor = '#2b3028'
-
-  }
-
-}
-
-/* ____________________________________________________________________________________________________ */
-
-/* Caixas Toggles */
-
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-
 /* ____________________________________________________________________________________________________ */
 
 /* Função que calcula todas as variáveis */
@@ -614,6 +543,24 @@ function somar() {
 
     couveFlor.info()
 
+  } else if (sementeUsada == 'frutaAntiga') {
+
+    var frutaAntiga = new Sementes('Fruta antiga', 550, 0, 550, 687, 825, 1100, 28, 7, 0, 1) /* Fruta antiga */
+
+    var nome = frutaAntiga.nome
+    var custoPierre = frutaAntiga.custoPierre
+    var custoJoja = frutaAntiga.custoJoja
+    var vendaNormal = frutaAntiga.vendaNormal
+    var vendaPrata = frutaAntiga.vendaPrata
+    var vendaOuro = frutaAntiga.vendaOuro
+    var vendaIridio = frutaAntiga.vendaIridio
+    var tempoColheita = frutaAntiga.tempoColheita
+    var tempoReproducao = frutaAntiga.tempoReproducao
+    var chanceMaisFrutos = frutaAntiga.chanceMaisFrutos
+    var qtdColhida = frutaAntiga.qtdColhida
+
+    frutaAntiga.info()
+
   } else if (sementeUsada == 'frutoCacto') {
 
     var frutoCacto = new Sementes('Fruto do cacto', 150, 0, 75, 93, 112, 150, 12, 3, 0, 1) /* Fruto do cacto */
@@ -631,7 +578,7 @@ function somar() {
     var qtdColhida = frutoCacto.qtdColhida
 
     frutoCacto.info()
-
+    
   } else if (sementeUsada == 'girassol') {
 
     var girassol = new Sementes('Girassol', 200, 125, 80, 100, 120, 160, 8, 0, 0, 1) /* Girassol */
@@ -4087,6 +4034,8 @@ function somar() {
   
   if (profissao2 == 'p2j0' && soloFoliar == 'sf0') { // Sem solo foliar e sem profissão
 
+    var tempoColheitaSF = tempoColheita
+
     inputGroup8.innerHTML = tempoColheita
 
     console.log('Sem solo foliar e sem profissão')
@@ -4181,7 +4130,7 @@ function somar() {
       
   } else if (tempoReproducao >= 1 && soloFoliar == 'sf0') { // Caso o fruto se reproduza e não tenha solo foliar
 
-    var coeficienteReproducao = Number.parseInt([(28 - diaAtualNumber) - tempoColheita] / tempoReproducao) // Número de vezes de produção na lavoura (com reprodução)
+    var coeficienteReproducao = Number.parseInt([(28 - diaAtualNumber) - tempoColheitaSF] / tempoReproducao) // Número de vezes de produção na lavoura (com reprodução)
 
     inputGroup24.innerHTML = ++coeficienteReproducao
 
@@ -4189,7 +4138,7 @@ function somar() {
 
   } else if (tempoReproducao == 0 && soloFoliar == 'sf0') { // Caso o fruto não se reproduza e não tenha solo foliar
 
-    var coeficienteProducao =  Number.parseInt((28 - diaAtualNumber) / tempoColheita) // Número de vezes de produção na lavoura (sem reprodução)
+    var coeficienteProducao =  Number.parseInt((28 - diaAtualNumber) / tempoColheitaSF) // Número de vezes de produção na lavoura (sem reprodução)
 
     inputGroup24.innerHTML = coeficienteProducao
 
@@ -4199,7 +4148,33 @@ function somar() {
 
   console.log('----------------------')
 
-  /* ____________________________________________________________________________________________________ */
+/* ____________________________________________________________________________________________________ */
+
+  /* Condições caso a semente seja a Fruta antiga se reproduza */
+
+  if (sementeUsada == 'frutaAntiga' && tempoReproducao >= 1 && soloFoliar != 'nda' && soloFoliar != 'sf0') { // Caso o fruto se reproduza e tenha solo foliar
+
+    var diasPerdidos = Number.parseInt((28 - diaAtualNumber - tempoColheitaSF))
+    var coeficienteReproducao = Number.parseInt((28 + diasPerdidos) / 7) + 1  // Número de vezes de produção na lavoura (com reprodução) // Número de vezes de produção na lavoura (com reprodução)
+
+    inputGroup24.innerHTML = coeficienteReproducao
+
+    console.log(`${diasPerdidos} dias perdidos fruta Antiga`)
+    console.log(`${coeficienteReproducao} número de colheitas fruta antiga`)
+
+  } else if (sementeUsada == 'frutaAntiga' && tempoReproducao >= 1 && soloFoliar == 'sf0') { // Caso o fruto se reproduza e não tenha solo    foliar
+
+    var diasPerdidos = Number.parseInt((28 - diaAtualNumber - tempoColheitaSF))
+    var coeficienteReproducao = Number.parseInt((28 + diasPerdidos) / 7) + 1 // Número de vezes de produção na lavoura (com reprodução)
+
+    inputGroup24.innerHTML = coeficienteReproducao
+
+    console.log(`${diasPerdidos} dias perdidos fruta Antiga`)
+    console.log(`${coeficienteReproducao} número de colheitas fruta antiga`)
+
+  }
+
+  console.log('----------------------')
 
   /* Calculo do faturamento e do lucro */
 
@@ -4243,7 +4218,7 @@ function somar() {
 
   console.log('----------------------')
 
-  console.log(`${custoTotalSementesJoja} custo total sementes pierre`)
+  console.log(`${custoTotalSementesJoja} custo total sementes Joja`)
 
   console.log('----------------------')
 
@@ -4359,7 +4334,13 @@ function somar() {
 
     console.log(`${tempoLucroJoja} dias para ter lucro por comprar na Joja`)
 
-  } 
+  } else {
+
+    inputGroup16.innerHTML = 'Nenhum'
+
+    console.log(`${tempoLucroJoja} dias para ter lucro por comprar na Joja`)
+
+  }
 
   // Campo: Espaço para lavoura
 

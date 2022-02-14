@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------------------------- */
+
+/* NAVBAR */
+
+header #navbar {
+    width: 100%;
+    justify-content: space-between;
+    overflow:visible;
+    background-color: rgba(0, 0, 0, 0.6); /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    top: 0; /* At the top */
+    z-index: 99;
+    transition: 1s;
+  }
+  
+  header #navbar:hover {
+    background-color: rgba(0, 0, 0, 0.90);
+  }
+
+/* ------------------------------------------------------------------------------- */
+
+/* CAMPOS NAVBAR */
+
+li {
+  border-radius: 10px;
+  outline: 2px solid white;
+  outline-offset: 2px;
+  margin: 5px 10px 5px 10px;
+}
+
+li:hover {
+  transition: .8s;
+  background-color: white;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Image logo Navbar */
+
+#brandimg {
+  margin-bottom: 6px;
+}
+
+/* ------------------------------------------------------------------------------- */
